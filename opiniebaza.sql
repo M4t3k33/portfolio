@@ -1,0 +1,7 @@
+CREATE TABLE Opinie (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    Imie_Nazwisko VARCHAR(255),
+    Ocena INT CHECK (Ocena BETWEEN 1 AND 10),
+    Komentarz TEXT,
+    Data_Opinii TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
