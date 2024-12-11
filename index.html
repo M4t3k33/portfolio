@@ -17,6 +17,7 @@
             <li><a href="#home">Początek</a></li>
             <li><a href="#about">O mnie</a></li>
             <li><a href="#projects">Projekty</a></li>
+            <li><a href="#opinie">Opinie klientów</a></li>
             <li><a href="#gallery">Galeria zdjęć</a></li>
         </ul>
     </nav>
@@ -154,25 +155,34 @@
             </a>
         </div>
     </section>
+      <section id="opinie">
+          <h1>Podziel się swoją opinią</h1>
+          <div class="container">
+              <div class="form-group">
+                  <label for="stars">Twoja ocena</label>
+                  <div class="star-rating" id="starRating">
+                      <input type="radio" id="star5" name="rating" value="5"><label for="star5">★</label>
+                      <input type="radio" id="star4" name="rating" value="4"><label for="star4">★</label>
+                      <input type="radio" id="star3" name="rating" value="3"><label for="star3">★</label>
+                      <input type="radio" id="star2" name="rating" value="2"><label for="star2">★</label>
+                      <input type="radio" id="star1" name="rating" value="1"><label for="star1">★</label>
+                  </div>
+              </div>
 
-    <section id="opinie">
-        <h1>Wystaw mi opinię!</h1>
-          <form id="opinie-form">
-           <label for="imie-nazwisko">Imię i nazwisko:</label>
-           <input type="text" id="imie-nazwisko" name="imie-nazwisko">
-         
-           <label for="ocena">Ocena (1-10):</label>
-           <input type="number" id="ocena" name="ocena" min="1" max="10">
-         
-           <label for="komentarz">Komentarz:</label>
-           <textarea id="komentarz" name="komentarz"></textarea>
-         
-           <button type="submit">Wyślij opinię</button>
-         </form>
-    <h2>Opinie klientów</h2>
-    <div id="opinie-container">
-    </section>
+              <div class="form-group">
+                  <label for="comment">Twoja opinia</label>
+                  <textarea id="comment" placeholder="Napisz swoją opinię..."></textarea>
+              </div>
 
+              <div class="form-group">
+                  <button id="submitReview">Dodaj opinię</button>
+              </div>
+
+              <div class="review-list" id="reviewList">
+                  <h2>Opinie:</h2>
+              </div>
+          </div>
+      </section>
     <section id="gallery">
         <h2>Galeria fotografii</h2>
         <div class="gallery-grid">
