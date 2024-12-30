@@ -3,6 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio Mateusza Dymowskiego - Developer i Fotograf. Tworzenie stron internetowych, aplikacji mobilnych oraz profesjonalna fotografia portretowa i krajobrazowa.">
+    <meta name="keywords" content="developer, fotograf, web development, portfolio, aplikacje mobilne, fotografia, Mateusz Dymowski">
+    <meta property="og:title" content="Mateusz Dymowski - Developer & Fotograf">
+    <meta property="og:description" content="Portfolio Mateusza Dymowskiego - Developer i Fotograf. Tworzenie stron internetowych, aplikacji mobilnych oraz profesjonalna fotografia.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourdomain.com">
+    <link rel="canonical" href="https://yourdomain.com">
     <title>Mateusz Dymowski- Developer & Fotograf</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -12,13 +19,12 @@
 
 <body>
     <nav>
-        <div class="logo">Portfolio</div>
+        <div class="logo">Mateusz Dymowski</div>
         <ul>
-            <li><a href="#home">Początek</a></li>
+            <li><a href="#home">Start</a></li>
             <li><a href="#about">O mnie</a></li>
             <li><a href="#projects">Projekty</a></li>
             <li><a href="#opinie">Opinie klientów</a></li>
-            <li><a href="#gallery">Galeria zdjęć</a></li>
         </ul>
     </nav>
 
@@ -100,12 +106,11 @@
     <section id="projects">
         <h2>Projekty</h2>
         <div class="cards-container">
-            <!-- Web Development Project Card -->
             <a href="pages/web-projects.html" class="card">
                 <div class="card-inner">
                     <div class="card-front">
                         <i class="fas fa-globe"></i>
-                        <h3>Web Development</h3>
+                        <h3>WebDev</h3>
                     </div>
                     <div class="card-back">
                         <h3>Projekty webowe</h3>
@@ -117,13 +122,11 @@
                     </div>
                 </div>
             </a>
-
-            <!-- Mobile App Project Card -->
             <a href="pages/mobile-projects.html" class="card">
                 <div class="card-inner">
                     <div class="card-front">
                         <i class="fas fa-mobile-alt"></i>
-                        <h3>Mobile Apps</h3>
+                        <h3>Aplikacje mobilne</h3>
                     </div>
                     <div class="card-back">
                         <h3>Aplikacje mobilne</h3>
@@ -135,13 +138,26 @@
                     </div>
                 </div>
             </a>
-
-            <!-- Photography Project Card -->
+            <a href="pages/web-projects.html" class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <i class="fas fa-code"></i>
+                        <h3>BotDev</h3>
+                    </div>
+                    <div class="card-back">
+                        <h3>Projekty</h3>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Boty Discord</li>
+                            <li><i class="fas fa-check"></i> Implementacja AI do projektów</li>
+                        </ul>
+                    </div>
+                </div>
+            </a>
             <a href="pages/photo-projects.html" class="card">
                 <div class="card-inner">
                     <div class="card-front">
                         <i class="fas fa-camera-retro"></i>
-                        <h3>Photography</h3>
+                        <h3>fotografia</h3>
                     </div>
                     <div class="card-back">
                         <h3>Projekty foto</h3>
@@ -173,32 +189,20 @@
                   <label for="comment">Twoja opinia</label>
                   <textarea id="comment" placeholder="Napisz swoją opinię..."></textarea>
               </div>
-
+              <button id="submitReview" aria-label="Dodaj opinię">Dodaj opinię</button>
               <div class="form-group">
-                  <button id="submitReview">Dodaj opinię</button>
-              </div>
 
+              </div>
               <div class="review-list" id="reviewList">
                   <h2>Opinie:</h2>
               </div>
           </div>
       </section>
-    <section id="gallery">
-        <h2>Galeria fotografii</h2>
-        <div class="gallery-grid">
-            <!-- Przykładowe zdjęcia -->
-            <div class="photo-item">
-                <img src="images/photo1.jpg" alt="Zdjęcie 1">
-            </div>
-            <!-- Dodaj więcej zdjęć -->
-        </div>
-    </section>
-
     <footer>
         <div class="footer-content">
             <div class="footer-info">
-                <h3>Let's Connect</h3>
-                <p>Feel free to reach out through any of these platforms</p>
+                <h3>Skontaktuj się ze mną</h3>
+                <p>za pomocą tych social medii</p>
             </div>
             
             <div class="social-links">
@@ -212,21 +216,34 @@
                     <span>X / Twitter</span>
                 </a>
 
-                <a href="https://github.com/M4t3k33" class="social-btn twitter">
-                    <i class="fab fa-x-twitter"></i>
+                <a href="https://github.com/M4t3k33" class="social-btn github">
+                    <i class="fab fa-github"></i>
                     <span>Github</span> 
                 </a>
             </div>
             
             <div class="footer-bottom">
-                <p>© 2024 Portfolio. All rights reserved.</p>
+                <p>© 2025 Mateusz Dymowski. Wszelkie prawa zastrzeżone</p>
             </div>
         </div>
     </footer>
 
     <script src="js/main.js"></script>
     <script src="js/opinie.js"></script>
-
+    <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "Person",
+          "name": "Mateusz Dymowski",
+          "jobTitle": "Developer & Fotograf",
+          "url": "https://yourdomain.com",
+          "sameAs": [
+            "https://github.com/M4t3k33",
+            "your-instagram-url",
+            "your-twitter-url"
+          ]
+        }
+    </script>
 </body>
 </html>
 
